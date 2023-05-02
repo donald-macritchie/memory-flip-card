@@ -68,3 +68,26 @@ h4 {
     border: black solid 2px;
     border-radius: 5%;
 }
+
+.button {
+    margin: 30px auto;
+    text-align: center;
+    background-color: rgba(180, 0, 1, 0.7);
+    width: 20%;
+    padding: 10px;
+    border: black solid 3px;
+    border-radius: 50%;
+}
+
+button {
+    font-family: bangers, sans-serif;
+    padding: 20px;
+    background-color: #feffff;
+    border-radius: 50%;
+    color: black;
+}
+
+button:hover {
+    background-color: black;
+    color: #feffff;
+}
