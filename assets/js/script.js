@@ -19,7 +19,20 @@ document.addEventListener('DOMContentLoaded', function() {
     //         start.style.display = 'none';
     //     }
     // }
-    
+
+    let time = document.getElementById('timer');
+    let timeLeft = 5;
+
+    time.innerHTML = `${timeLeft}`;
+
+    let countdown = setInterval(function() {
+        timeLeft--;
+        time.innerHTML = `${timeLeft}`;
+        if(timeLeft === 0) {
+            clearInterval(countdown)
+        }
+    }, 1000)
+        
 
 
     function flipCard() {
