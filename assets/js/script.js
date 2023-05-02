@@ -9,6 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let cardTwo;
     let stopFlip = false;
 
+    
+
+    // function startGame() {
+    //     let start = document.getElementById('game-board');
+    //     if(start.style.display = 'none') {
+    //         start.style.display = 'grid';
+    //     } else {
+    //         start.style.display = 'none';
+    //     }
+    // }
+    
+
+
     function flipCard() {
         if(stopFlip) return;
         //stops user from clicking a third icon before
@@ -55,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
     randomiseBoard();
+
 
     icons.forEach(card => card.addEventListener('click', flipCard));
     
