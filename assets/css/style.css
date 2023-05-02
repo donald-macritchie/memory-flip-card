@@ -1,0 +1,19 @@
+
+/*resets*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    font-family: bangers, sans-serif;
+    text-shadow: 2px 5px black;
+    color: #feffff;
+}
