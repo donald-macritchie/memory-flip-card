@@ -52,3 +52,19 @@ h4 {
     border: black solid 5px;
     border-radius: 5%;
 }
+
+.game-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #cccecd;
+    border: black solid 2px;
+    border-radius: 5%;
+}
