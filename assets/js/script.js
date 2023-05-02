@@ -47,6 +47,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    //randomises the board so the pairs of icons don not sit side by side.
+    function randomiseBoard() {
+        icons.forEach(icons => {
+            let randomNum = Math.floor(Math.random() * 16);
+            icons.style.order = randomNum;
+        })
+    }
+    randomiseBoard();
+
     icons.forEach(card => card.addEventListener('click', flipCard));
     
     
