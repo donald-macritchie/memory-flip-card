@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 /*resets*/
 * {
@@ -7,6 +8,7 @@
 
 body {
     height: 100vh;
+    background-image: url(../images/comic-wallpaper.png);
 }
 
 header {
@@ -16,4 +18,22 @@ header {
     font-family: bangers, sans-serif;
     text-shadow: 2px 5px black;
     color: #feffff;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    background-color: rgba(180, 0, 1, 0.7);
+    border: black solid 5px;
+}
+
+h4 {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    background-color: rgba(180, 0, 1, 0.7);
+    border: black solid 5px;
 }
