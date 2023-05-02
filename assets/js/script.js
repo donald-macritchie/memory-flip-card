@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const cards = document.getElementsByClassName('game-card');
-    console.log(cards);
+    
     const icons = Array.from(cards);
-    console.log(icons);
 
+    function flipCard() {
+        console.log('this was clicked');
+    }
 
-
-
-
-
+    icons.forEach(card => card.addEventListener('click', flipCard));
+    
+    
+    
 
 })
 
-console.log('hello')
