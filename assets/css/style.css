@@ -58,7 +58,19 @@ h4 {
     display: flex;
     justify-content: center;
     margin: 20px auto;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
 }
+
+.game-card:active {
+    transform: scale(.9);
+    transition: transform 0.3s;
+ }
+
+ .game-card.flipped {
+    transform: rotateY(180deg);
+ }
 
 .front, .back {
     position: absolute;
@@ -67,7 +79,12 @@ h4 {
     background-color: #cccecd;
     border: black solid 2px;
     border-radius: 5%;
+    backface-visibility: hidden;
 }
+
+.front {
+    transform: rotateY(180deg);
+ }
 
 .button {
     margin: 30px auto;

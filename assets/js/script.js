@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const icons = Array.from(cards);
 
     function flipCard() {
-        console.log('this was clicked');
+        this.classList.toggle('flipped');
     }
 
     icons.forEach(card => card.addEventListener('click', flipCard));
