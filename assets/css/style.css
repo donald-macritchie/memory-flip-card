@@ -91,3 +91,7 @@ button:hover {
     background-color: black;
     color: #feffff;
 }
+
+footer {
+    height: 200px;
+}
