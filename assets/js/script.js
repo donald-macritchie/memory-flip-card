@@ -28,7 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if(cardOne.dataset.icon === cardTwo.dataset.icon) {
             cardOne.removeEventListener('click', flipCard);
             cardTwo.removeEventListener('click', flipCard);
-        } 
+            //checks if the two icons are the same
+            //if the same, the event listener is removed
+            // icons cant be flipped back
+        } else {
+            setTimeout( function() {
+                cardOne.classList.remove('flipped');
+                cardTwo.classList.remove('flipped');
+            }, 1000);
+            //Timeout allows users to see incorrect match before flipping back over
+            
+        }
     }
 
     icons.forEach(card => card.addEventListener('click', flipCard));
