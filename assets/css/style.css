@@ -37,3 +37,18 @@ h4 {
     background-color: rgba(180, 0, 1, 0.7);
     border: black solid 5px;
 }
+
+#game-board {
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    background-color: rgba(180, 0, 1, 0.7);
+    border: black solid 5px;
+    border-radius: 5%;
+}
