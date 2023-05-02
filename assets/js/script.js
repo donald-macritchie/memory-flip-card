@@ -7,8 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let cardFlipped = false;
     let cardOne;
     let cardTwo;
+    let stopFlip = false;
 
     function flipCard() {
+        if(stopFlip) return;
+        //stops user from clicking a third icon before
+        //the first two clicked, have flipped back
         this.classList.toggle('flipped');
         if(cardFlipped === false) {
             cardFlipped = true;
@@ -32,9 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
             //if the same, the event listener is removed
             // icons cant be flipped back
         } else {
+            stopFlip = true;
             setTimeout( function() {
                 cardOne.classList.remove('flipped');
                 cardTwo.classList.remove('flipped');
+                stopFlip = false;
             }, 1000);
             //Timeout allows users to see incorrect match before flipping back over
             
