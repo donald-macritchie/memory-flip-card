@@ -7,31 +7,28 @@ document.addEventListener('DOMContentLoaded', function() {
     let cardFlipped = false;
     let cardOne;
     let cardTwo;
-    let stopFlip = false;
+    let stopFlip = true;
+    let countdown = null;
+    let timeLeft = 5;
 
     
 
-    // function startGame() {
-    //     let start = document.getElementById('game-board');
-    //     if(start.style.display = 'none') {
-    //         start.style.display = 'grid';
-    //     } else {
-    //         start.style.display = 'none';
-    //     }
-    // }
+
 
     let time = document.getElementById('timer');
-    let timeLeft = 5;
-
     time.innerHTML = `${timeLeft}`;
 
-    let countdown = setInterval(function() {
-        timeLeft--;
-        time.innerHTML = `${timeLeft}`;
-        if(timeLeft === 0) {
-            clearInterval(countdown)
-        }
-    }, 1000)
+    function startTimer(){
+        countdown = setInterval(function() {
+            timeLeft--;
+            time.innerHTML = `${timeLeft}`;
+            if(timeLeft === 0) {
+                stopFlip = true;
+                clearInterval(countdown);
+                alert('Time is up');
+            }
+        }, 1000)
+    }
         
 
 
