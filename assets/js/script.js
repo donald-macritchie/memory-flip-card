@@ -11,7 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let countdown = null;
     let timeLeft = 5;
 
-    
+    startGame() {
+        stopFlip = false;
+        timeLeft = 5;
+        randomiseBoard();
+    }
 
 
 
@@ -77,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             icons.style.order = randomNum;
         })
     }
-    randomiseBoard();
+
 
 
     icons.forEach(card => card.addEventListener('click', flipCard));
