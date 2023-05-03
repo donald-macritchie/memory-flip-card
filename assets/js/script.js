@@ -9,13 +9,21 @@ document.addEventListener('DOMContentLoaded', function() {
     let cardTwo;
     let stopFlip = true;
     let countdown = null;
-    let timeLeft = 5;
+    let timeLeft = 60;
 
     function startGame() {
+        unflipCards();
         stopFlip = false;
-        timeLeft = 5;
+        timeLeft = 60;
         randomiseBoard();
         startTimer();
+    }
+
+    function resetGame() {
+        const reset = confirm('Are you sure you want to reset?');
+        if(reset) {
+            startGame();
+        }
     }
 
 
@@ -91,6 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     icons.forEach(card => card.addEventListener('click', flipCard));
+    document.getElementById('startGame').addEventListener('click', startGame);
+    document.getElementById('resetGame').addEventListener('click', resetGame);
     
     
     
