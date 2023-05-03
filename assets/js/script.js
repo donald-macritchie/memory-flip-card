@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let countdown = null;
     let timeLeft = 5;
 
-    startGame() {
+    function startGame() {
         stopFlip = false;
         timeLeft = 5;
         randomiseBoard();
+        startTimer();
     }
 
 
@@ -32,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Time is up');
             }
         }, 1000)
+    }
+
+    function unflipCards(){
+        const flippedCards = Array.from(document.getElementsByClassName('game-card'));
+        flippedCards.forEach(flippedCard => flippedCard.classList.remove('flipped'));
     }
         
 
