@@ -43,6 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000)
     }
 
+    // Once all matches ahe been revealed, the timer stops. 
+    function stopTimer() {
+        if(document.getElementById('score').innerHTML === '8') {
+            clearTimeout(countdown);
+            alert('You matched all 8 pairs in under 60 seconds, Congratulations!')
+        }
+    }
+
     function unflipCards () {
         const flippedCards = Array.from(document.getElementsByClassName('game-card'));
         flippedCards.forEach(flippedCard => flippedCard.classList.remove('flipped'));
@@ -64,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             //if cardFlipped is set to true, the user will be clicking for cardTwo
 
             matchingCards();
+            stopTimer();
         }
     }
 
