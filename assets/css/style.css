@@ -29,13 +29,17 @@ h1 {
     border: black solid 5px;
 }
 
-h4 {
+h4, #instructions {
     margin-bottom: 20px;
     padding: 10px 0;
     font-size: 1.5rem;
     letter-spacing: 2px;
     background-color: rgba(180, 0, 1, 0.7);
     border: black solid 5px;
+}
+
+#instructions p {
+    margin-bottom: 10px;
 }
 
 #game-board {
