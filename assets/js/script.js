@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const cards = document.getElementsByClassName('game-card');
-    
+
     const icons = Array.from(cards);
 
     let cardFlipped = false;
@@ -10,9 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let stopFlip = true;
     let countdown = null;
     let timeLeft = 60;
+    let score = 0;
 
     function startGame() {
         unflipCards();
+        icons.forEach(card => card.addEventListener('click', flipCard));
         stopFlip = false;
         timeLeft = 60;
         randomiseBoard();
@@ -26,40 +28,36 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-
-
     let time = document.getElementById('timer');
     time.innerHTML = `${timeLeft}`;
 
-    function startTimer(){
+    function startTimer() {
         countdown = setInterval(function() {
             timeLeft--;
             time.innerHTML = `${timeLeft}`;
             if(timeLeft === 0) {
                 stopFlip = true;
                 clearInterval(countdown);
-                alert('Time is up');
+                alert('Time is up!');
             }
         }, 1000)
     }
 
-    function unflipCards(){
+    function unflipCards () {
         const flippedCards = Array.from(document.getElementsByClassName('game-card'));
         flippedCards.forEach(flippedCard => flippedCard.classList.remove('flipped'));
     }
-        
-
 
     function flipCard() {
         if(stopFlip) return;
-        //stops user from clicking a third icon before
+        // stops user from clicking a third icon before
         //the first two clicked, have flipped back
         this.classList.toggle('flipped');
         if(cardFlipped === false) {
             cardFlipped = true;
             cardOne = this;
             //check if cardOne has been flipped
-            //any icon clicked after event will be false(not cardOne)
+            // any icon clicked after the event will be false(not CardOne)
         } else {
             cardFlipped = false;
             cardTwo = this;
@@ -73,22 +71,21 @@ document.addEventListener('DOMContentLoaded', function() {
         if(cardOne.dataset.icon === cardTwo.dataset.icon) {
             cardOne.removeEventListener('click', flipCard);
             cardTwo.removeEventListener('click', flipCard);
+            document.getElementById('score').innerHTML = ++score;
             //checks if the two icons are the same
             //if the same, the event listener is removed
-            // icons cant be flipped back
+            //icons cant be flipped back
         } else {
             stopFlip = true;
-            setTimeout( function() {
+            setTimeout(function() {
                 cardOne.classList.remove('flipped');
                 cardTwo.classList.remove('flipped');
                 stopFlip = false;
             }, 1000);
-            //Timeout allows users to see incorrect match before flipping back over
-            
+            //timeout allow user to see incorrect match before flipped back over
         }
     }
 
-    //randomises the board so the pairs of icons don not sit side by side.
     function randomiseBoard() {
         icons.forEach(icons => {
             let randomNum = Math.floor(Math.random() * 16);
@@ -96,14 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-
-
     icons.forEach(card => card.addEventListener('click', flipCard));
     document.getElementById('startGame').addEventListener('click', startGame);
     document.getElementById('resetGame').addEventListener('click', resetGame);
-    
-    
-    
-
 })
 
