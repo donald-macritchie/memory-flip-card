@@ -124,6 +124,19 @@ button:hover {
 
 }
 
+#game-time {
+    margin-right: 30px;
+}
+
+#score-board {
+    margin-left: 30px;
+}
+
+#game-stats {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     height: 200px;
 }
