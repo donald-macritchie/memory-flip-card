@@ -109,8 +109,8 @@ button:hover {
     color: #feffff;
 }
 
-#game-time, #score-board {
-    margin: 30px auto;
+#game-time, #score-board, #highscore-display {
+    margin: 30px 30px;
     text-align: center;
     background-color: rgba(180, 0, 1, 0.7);
     width: 10%;
