@@ -90,27 +90,23 @@ h4, #instructions {
     transform: rotateY(180deg);
  }
 
-.button {
-    margin: 30px auto;
-    text-align: center;
-    background-color: rgba(180, 0, 1, 0.7);
-    width: 10%;
-    padding: 10px;
-    border: black solid 3px;
-    border-radius: 50%;
-}
+
 
 button {
+    display: flex;
+    margin: 30px auto;
     font-family: bangers, sans-serif;
     padding: 20px;
-    background-color: #feffff;
+    background-color: black;
+    border: rgba(180, 0, 1, 0.7) solid 5px;
     border-radius: 50%;
-    color: black;
+    color: #feffff;
 }
 
 button:hover {
-    background-color: black;
-    color: #feffff;
+    background-color: #feffff;
+    color: black;
+    border: rgba(180, 0, 1, 0.7) solid 5px;
 }
 
 #game-time, #score-board, #highscore-display {
@@ -144,3 +140,31 @@ button:hover {
 footer {
     height: 200px;
 }
+
+/* sccren sizes 680px and below */
+
+@media screen and (max-width:680px) {
+    #heaader {
+        font-size: 0.8rem;
+
+    }
+
+    #game-stats {
+        margin: 0 50px;
+        font-size: 0.7rem;
+    }
+
+    .game-card img {
+        width: 55px;
+        height: 55px;
+    }
+
+    #game-board {
+        width: 80%;
+        height: 40%;
+        margin: 0 auto;
+        
+    }
+
+}
+
