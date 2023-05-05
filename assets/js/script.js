@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function resetGame() {
         const reset = confirm('Are you sure you want to reset?');
         if(reset) {
-            startGame();
+            unflipCards();
+            document.getElementById('score').innerHTML = '0';
         }
     }
 
