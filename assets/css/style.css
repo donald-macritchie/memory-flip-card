@@ -109,7 +109,7 @@ button:hover {
     border: rgba(180, 0, 1, 0.7) solid 5px;
 }
 
-#game-time, #score-board, #highscore-display {
+#game-time, #score-board {
     margin: 30px 30px;
     text-align: center;
     background-color: rgba(180, 0, 1, 0.7);
@@ -137,6 +137,25 @@ button:hover {
     justify-content: center;
 }
 
+#highscore-display {
+    display: block;
+    justify-content: center;
+    margin: 30px auto;  
+    padding: 30px;
+    width: 40%;
+    background-color: rgba(180, 0, 1, 0.7);
+    border: black solid 5px;
+    color: #feffff;
+    text-shadow: 2px 5px black;
+    font-family: bangers, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+#enter {
+    text-align: center;
+}
+
 footer {
     height: 200px;
 }
@@ -161,9 +180,13 @@ footer {
 
     #game-board {
         width: 80%;
-        height: 40%;
+        height: 50%;
         margin: 0 auto;
         
+    }
+
+    input {
+        width: 50%;
     }
 
 }
