@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if(reset) {
             unflipCards();
             document.getElementById('score').innerHTML = '0';
+            clearTimeout(countdown);
+            document.getElementById('timer').innerHTML = '60';
         }
     }
 
@@ -38,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             time.innerHTML = `${timeLeft}`;
             if(timeLeft === 0) {
                 stopFlip = true;
-                clearInterval(countdown);
+                clearTimeout(countdown);
                 alert('Time is up!');
             }
         }, 1000)
