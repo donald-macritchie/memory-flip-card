@@ -156,6 +156,14 @@ button:hover {
     text-align: center;
 }
 
+#enter h5 {
+    margin-bottom: 10px;
+}
+
+#saveScore {
+    display: none;
+}
+
 footer {
     height: 200px;
 }

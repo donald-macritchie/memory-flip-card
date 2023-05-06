@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('score').innerHTML = '0';
             clearTimeout(countdown);
             document.getElementById('timer').innerHTML = '60';
+            document.getElementById('saveScore').style.display = 'none';
         }
     }
 
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 stopFlip = true;
                 clearTimeout(countdown);
                 alert('Time is up!');
+                document.getElementById('saveScore').style.display = 'block';
             }
         }, 1000)
     }
@@ -50,7 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function stopTimer() {
         if(document.getElementById('score').innerHTML === '8') {
             clearTimeout(countdown);
-            alert('You matched all 8 pairs in under 60 seconds, Congratulations!')
+            alert('You matched all 8 pairs in under 60 seconds, Congratulations!');
+            document.getElementById('saveScore').style.display = 'block';
         }
     }
 
