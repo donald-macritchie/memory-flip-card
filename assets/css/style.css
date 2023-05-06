@@ -160,7 +160,7 @@ footer {
     height: 200px;
 }
 
-/* sccren sizes 680px and below */
+/* screen sizes 680px and below */
 
 @media screen and (max-width:680px) {
     #heaader {

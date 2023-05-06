@@ -105,8 +105,26 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
+    function saveScore() {
+        const userName = document.getElementById('userScore').value;
+        localStorage.setItem(userName, score);
+        showScores();
+    }
+
+    function showScores() {
+        const list = document.getElementById('highScores');
+        list.innerHTML = '';
+        Object.keys(localStorage).forEach(function(key) {
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(`${key}: ${localStorage.getItem(key)}`));
+            list.appendChild(li);
+        });
+    }
+
     icons.forEach(card => card.addEventListener('click', flipCard));
     document.getElementById('startGame').addEventListener('click', startGame);
     document.getElementById('resetGame').addEventListener('click', resetGame);
+    document.getElementById('saveScore').addEventListener('click', saveScore);
+    showScores();
 })
 
