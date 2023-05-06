@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         icons.forEach(icons => {
             let randomNum = Math.floor(Math.random() * 16);
             icons.style.order = randomNum;
-        })
+        });
     }
 
     function saveScore() {
@@ -129,5 +129,5 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('resetGame').addEventListener('click', resetGame);
     document.getElementById('saveScore').addEventListener('click', saveScore);
     showScores();
-})
+});
 
