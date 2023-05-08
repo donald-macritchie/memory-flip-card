@@ -141,6 +141,18 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
  - All cards image icons were taken from the site [pngwing.com](https://www.pngwing.com/).
  - The background image was taken from [an amazon wallpaper product](https://www.amazon.co.uk/Marvel-Comic-Wallpaper-Muriva-159502/dp/B07Z6NHFYN). 
 
+#### Icons
+- [Thor](https://www.pngwing.com/en/free-png-tqahz)
+- [Iron Man](https://www.pngwing.com/en/free-png-ynhrv)
+- [Hulk](https://www.pngwing.com/en/free-png-adbuq)
+- [Captain America](https://www.pngwing.com/en/free-png-vennv)
+- [Black Widow](https://www.pngwing.com/en/free-png-ixgaf)
+- [Hawkeye](https://www.pngwing.com/en/free-png-kgznv)
+- [Spiderman](https://www.pngwing.com/en/free-png-bvdfn)
+- [Black Panther](https://www.pngwing.com/en/free-png-nvdes)
+- [Avengers Logo](https://www.pngwing.com/en/free-png-bbohl)
+
 
 
 ## ReadMe
+- This README.md File was created using the [Code Institute README.md template](https://github.com/Code-Institute-Solutions/readme-template) and using tips from the "Creating a README" file created by [Kera Cudmore](https://github.com/kera-cudmore)
