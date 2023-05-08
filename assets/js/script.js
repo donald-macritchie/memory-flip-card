@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const flippedCards = Array.from(document.getElementsByClassName('game-card'));
         flippedCards.forEach(flippedCard => flippedCard.classList.remove('flipped'));
     }
-
+    
+    //This code was written from Marina Ferreira's memory flip game. See credits
     function flipCard() {
         if(stopFlip) return;
         // stops user from clicking a third icon before
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    //This code was written from Marina Ferreira's memory flip game. See credits
     function matchingCards() {
         if(cardOne.dataset.icon === cardTwo.dataset.icon) {
             cardOne.removeEventListener('click', flipCard);
@@ -102,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    //This code was written from Marina Ferreira's memory flip game. See credits
     function randomiseBoard() {
         icons.forEach(icons => {
             let randomNum = Math.floor(Math.random() * 16);

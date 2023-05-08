@@ -57,6 +57,7 @@ h4, #instructions {
     border-radius: 5%;
 }
 
+/*This code was written from Marina Ferreira's memory flip game. See credits*/
 .game-card {
     position: relative;
     display: flex;
@@ -67,15 +68,18 @@ h4, #instructions {
     transition: transform 0.3s;
 }
 
+/*This code was written from Marina Ferreira's memory flip game. See credits*/
 .game-card:active {
     transform: scale(.9);
     transition: transform 0.3s;
  }
 
+ /*This code was written from Marina Ferreira's memory flip game. See credits*/
  .game-card.flipped {
     transform: rotateY(180deg);
  }
 
+ /*This code was written from Marina Ferreira's memory flip game. See credits*/
 .front, .back {
     position: absolute;
     width: 100px;
@@ -86,6 +90,7 @@ h4, #instructions {
     backface-visibility: hidden;
 }
 
+/*This code was written from Marina Ferreira's memory flip game. See credits*/
 .front {
     transform: rotateY(180deg);
  }

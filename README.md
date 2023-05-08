@@ -99,15 +99,15 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
 
 ### Timer function
  - Before the fix, the timer would get down to zero and would continue to run into minus seconds.
- - In order to fix this, I was able to change the clearInterval to clearTimeout. 
+ - In order to fix this, I was able to change the clearInterval to clearTimeout.
 
-
+### Score Board
+ - In the second attempt of the game after reset, the score board would display a score of more than 8/8, for example, 9/8, 10/8, etc. 
+ - This was fixed by placing the score variable into the startGame function which now resets the score board. 
 
 
 ## Unfixed Bugs
 
-### Score Board
-- The score board needs to be fixed
 
 ## Deployment
  - The site was deployed using GitHub pages. The steps taken are as follows:
@@ -119,6 +119,11 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
  - View the live project here
 
 ## Credits
+
+### Code
+ - Marina Ferreira -  [this is the github repository for Marina Ferreira's flip card game](https://github.com/code-sketch/memory-game)
+   - This code used for the flipCard function, matchingCards function and the randomiseBoard function was taken from here. 
+   - I also used the css styling techniques of the flip animation from here.
 
 ### Code
 
