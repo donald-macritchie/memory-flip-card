@@ -1,5 +1,8 @@
 # Marvel Memorise
-The Marvel Memorise website has been craeted to display and interactivce with a memory flip card game. 
+ - The Marvel Memorise website has been craeted to display and interactivce with a memory flip card game. 
+ - This is a memory card game challenge in which users of all ages can test their memory skills against themselves and others.
+ - Users are presented with a 16 card game board that consists of 8 pairs for the user to find and match. 
+ This can be valuable to anyone who likes quick mental challenges, but also an interactive game for younger users to improve on their memory skills. 
 
 [View the live project here](https://donald-macritchie.github.io/memory-flip-card/)
 
