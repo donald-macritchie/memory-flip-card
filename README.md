@@ -78,6 +78,10 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
 
 ![this is a screen shot of the reset game button](./assets/screenshots/reset-button.png)
 
+## Additonal features to implement
+ - An idea to implement at a later date is for the score board to display the time remaining 
+ alongside the score of matching pairs. I feel this would be especially aimed at those who have achieved a full score and want to test rate themselves against the clock.  
+
 ## Testing
 
 - HTML
@@ -105,11 +109,17 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
  - In the second attempt of the game after reset, the score board would display a score of more than 8/8, for example, 9/8, 10/8, etc. 
  - This was fixed by placing the score variable into the startGame function which now resets the score board. 
 
+### Start Game Button
+ - I had initially tried to use an onclick attribute on the start game button element
+ - Due to the script being at the bottom of the html page, i realised that this would not work
+ - This was replaced with an click event listener in the script.js file 
+
 
 ## Unfixed Bugs
 
 
 ## Deployment
+
  - The site was deployed using GitHub pages. The steps taken are as follows:
 
  - In the GitHub repository, navigate to the Settings tab
@@ -125,8 +135,13 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
    - This code used for the flipCard function, matchingCards function and the randomiseBoard function was taken from here. 
    - I also used the css styling techniques of the flip animation from here.
 
-### Code
+- Antonio Rod
 
 ### Images
+
+ - All cards image icons were taken from the site [pngwing.com](https://www.pngwing.com/).
+ - The background image was taken from [an amazon wallpaper product](https://www.amazon.co.uk/Marvel-Comic-Wallpaper-Muriva-159502/dp/B07Z6NHFYN). 
+
+
 
 ## ReadMe
