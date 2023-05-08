@@ -135,7 +135,6 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
    - This code used for the flipCard function, matchingCards function and the randomiseBoard function was taken from here. 
    - I also used the css styling techniques of the flip animation from here.
 
-- Antonio Rod
 
 ### Images
 
