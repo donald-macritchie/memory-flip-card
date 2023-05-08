@@ -44,7 +44,7 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
 
 ### Start Game
 
- - The game begns as soon as the users clicks the "Start Game" button located avoed the game area. This button not only starts the timer, it will also link the player straight to the game board so the user doesn't lose valuable seconds. 
+ - The game begns as soon as the users clicks the "Start Game" button located above the game area.  
 
  ![this is a screenshot of the start button](./assets/screenshots/start-button.png)
 
