@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         timeLeft = 60;
         randomiseBoard();
         startTimer();
+        score = 0;
     }
 
     function resetGame() {
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000)
     }
 
-    // Once all matches ahe been revealed, the timer stops. 
+    // Once all matches have been revealed, the timer stops. 
     function stopTimer() {
         if(document.getElementById('score').innerHTML === '8') {
             clearTimeout(countdown);
