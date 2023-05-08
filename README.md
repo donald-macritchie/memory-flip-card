@@ -12,13 +12,13 @@
  - As a user, I want to be able to play a memory flip game
  - As a user, I want to be able to challenge myself with a time restriction.
  - As a user, I want to be able to keep track of my high score.
- - As a user, I want to be able to keep track of other users' high score.
+ - As a user, I want to be able to keep track of other users' high scores.
 
 ## Features
 
 ### Theme
 
- - The theme of Marvels Avengers has beeen used. This was due to the fact that the Marvel is one of the most recognisable franchises throughout the world and therefore most users who visit this site will be able to relate and appreciate the aesthetic.
+ - The theme of Marvels Avengers has been used. This was due to the fact that Marvel is one of the most recognisable franchises throughout the world and therefore most users who visit this site will be able to relate and appreciate the aesthetic.
 - On the face of the cards, will be pairs of icons that represent:
 - Captain America
 - Iron man
@@ -43,7 +43,6 @@
 
  ![this ius a screenshot of the game cards having been flipped](./assets/screenshots/game-board-flip.png) 
 
- This 
 
 ### Start Game
 
@@ -69,12 +68,12 @@
  ![this is a screenshot of the intructions](./assets/screenshots/instructions.png)
 ### High Score
 
-- The High Scores area displays all the latest scores on the entered into the input field and is stored in local storage.
+- The High Scores area displays all the latest scores entered into the input field and is stored in local storage.
 - This was introduced to allow users to be able to keep track of their high score and also keep track of other users scores. 
 
 ![this is a screenshot of the high scores board](./assets/screenshots/high-score.png)
 
- - The save score button has been coded so that the user can only input there name and save the score to local storage when the game has been completed. 
+ - The save score button has been coded so that the user can only input their name and save the score to local storage when the game has been completed. 
 
 ### Reset Game
  - The Reset Game button will clear the game data.
@@ -83,7 +82,7 @@
 
 ## Additonal features to implement
  - An idea to implement at a later date is for the score board to display the time remaining 
- alongside the score of matching pairs. I feel this would be especially aimed at those who have achieved a full score and want to test rate themselves against the clock.  
+ alongside the score of matching pairs. I feel this would be especially aimed at those who have achieved a full score and want to test themselves against the clock.  
  - Code the Start Game button to take the user to the game area as soon as it is clicked.  
 
 ## Testing
@@ -119,8 +118,6 @@
  - This was replaced with an click event listener in the script.js file 
 
 
-## Unfixed Bugs
-
 
 ## Deployment
 
@@ -129,8 +126,8 @@
  - In the GitHub repository, navigate to the Settings tab
  - From here, scroll down to and select the Pages sub menu
  - In the source section use the drop down menu and select "main" and
- click save -Once this has been saved, GitHub pages produces a link to follow to the live site.
- - View the live project here
+ click save. Once this has been saved, GitHub pages produces a link to follow to the live site.
+ - [View the live project here](https://donald-macritchie.github.io/memory-flip-card/)
 
 ## Credits
 
