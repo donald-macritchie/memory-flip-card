@@ -81,6 +81,7 @@ The Marvel Memorise website has been craeted to display and interactivce with a 
 ## Additonal features to implement
  - An idea to implement at a later date is for the score board to display the time remaining 
  alongside the score of matching pairs. I feel this would be especially aimed at those who have achieved a full score and want to test rate themselves against the clock.  
+ - Code the Start Game button to take the user to the game area as soon as it is clicked.  
 
 ## Testing
 
